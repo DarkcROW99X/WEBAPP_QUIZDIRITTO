@@ -520,12 +520,22 @@ const quizData = [
 
 ];
 
-let currentQuestion = Math.floor(Math.random() * quizData.length);
+// Mescola tutte le domande all'inizio
+function shuffle(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
+}
+
+shuffle(quizData); // randomizza l'ordine
+
+let currentQuestion = 0;
 
 function loadQuestion() {
   const questionData = quizData[currentQuestion];
-  document.getElementById(question).textContent = questionData.question;
-  const optionsDiv = document.getElementById(options);
+  document.getElementById("question").textContent = questionData.question;
+  const optionsDiv = document.getElementById("options");
   optionsDiv.innerHTML = "";
   questionData.options.forEach(option => {
     const btn = document.createElement("button");
@@ -547,4 +557,3 @@ function nextQuestion() {
 }
 
 window.onload = loadQuestion;
-
