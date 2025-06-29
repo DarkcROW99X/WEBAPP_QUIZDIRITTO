@@ -520,7 +520,7 @@ const quizData = [
 
 ];
 
-let currentQuestion = Math.floor(Math.random() * quizData.length);;
+let currentQuestion = Math.floor(Math.random() * quizData.length);
 
 function loadQuestion() {
   const questionData = quizData[currentQuestion];
