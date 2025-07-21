@@ -153,7 +153,7 @@ const quizData = [
     question: "Chi afferma che ogni narrazione storica utilizza tropi letterari e che l'oggettività è un'illusione?",
     options: ["Hayden White", "Danto", "Barthes", "Hempel"],
     answer: "Hayden White"
-  }
+  },
   {
     question: "Qual è la distinzione metodologica introdotta da Wilhelm Windelband?",
     options: ["Scienze naturali vs scienze sociali", "Scienze nomotetiche vs scienze idiografiche", "Scienze deduttive vs scienze induttive", "Scienze empiriche vs scienze umane"],
